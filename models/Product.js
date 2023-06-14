@@ -20,19 +20,19 @@ Product.init(
       allowNull: false,
     },
     price: {
-      type: DataType.DECIMAL, // problem here
+      type: DataTypes.DECIMAL(10, 2), // problem here
       allowNull: false,
-      isDecimal: true,
+      isDecimal: true, // check this later if correct
     },
     stock: {
       type: DataTypes.INTEGER,
       allowNull: false,
-      defaultValue: 10,
-      isNumeric: true,
+      defaultValue: 10, // check
+      isNumeric: true, // check
     },
     category_id: {
       type: DataTypes.INTEGER,
-      References: {
+      references: {
         module: 'category',
         key: 'id'
 
