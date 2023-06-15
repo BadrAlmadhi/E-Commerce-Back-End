@@ -22,20 +22,23 @@ Product.init(
     price: {
       type: DataTypes.DECIMAL(10, 2), // problem here
       allowNull: false,
-      isDecimal: true, // check this later if correct
+      validate: {
+        isDecimal: true,// check this later if correct
+      }
     },
     stock: {
       type: DataTypes.INTEGER,
       allowNull: false,
-      defaultValue: 10, // check
-      isNumeric: true, // check
+      defaultValue: 10, // check\
+      validate: {
+        isNumeric: true,
+      } // check
     },
     category_id: {
       type: DataTypes.INTEGER,
       references: {
         module: 'category',
         key: 'id'
-
       }
     }
   },
