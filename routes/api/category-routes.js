@@ -63,7 +63,7 @@ router.put('/:id', async (req, res) => {
 });
 
 router.delete('/:id', async (req, res) => {
-
+  // delete category
   try {
     const deleteCategory = await Category.destroy({
       where: {
@@ -72,8 +72,9 @@ router.delete('/:id', async (req, res) => {
     });
     if (!deleteCategory) {
       res.status(500).json({ message: 'No delete with this id' });
+      return;
     }
-    req.status(200).json(deleteCategory);
+    res.status(200).json(deleteCategory);
   } catch (err) {
     res.status(500).json(err);
   }
