@@ -40,4 +40,6 @@ In this web page I used MIT License. Here is a link explaining what is MIT Licen
 ## Videos 
 
 This video shows all the category routes 
-[label](<../../../../Downloads/Desktop Recording - June 25, 2023 10_44 PM.webm>)
+[Test All Category](https://drive.google.com/file/d/1m0aM-a6LOyNe3UO6ZUDvTVNq-W4hbQ5E/view)
+[Test All Products](https://drive.google.com/file/d/1c_nOCsYGIaUMlnh0Az3UsN8NDBZmnVKN/view)
+[Test all Tags](https://drive.google.com/file/d/1WEy0Bky-MzMw5T7HTxYGj1XcrNnD4J8_/view)
